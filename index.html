@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- fontawesome icon CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <!-- Bootstrap stylesheet, could deside to use the bootstrap CDN -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- local stylesheet compiled from scss -->
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body class="bg-primary d-flex justify-content-center">
+    <main>
+        <!-- form section -->
+        <section class="cc-form-section">
+            <!-- Mini Navigation -->
+            <div class="cc-mini-nav text-right">
+                <p class="font-weight-bold">Step 1 of 3 <span>.</span> <span>.</span> <span>.</span></p>
+            </div>
+            <!-- form container -->
+            <div class="cc-form-container d-flex justify-content-center align-items-center">
+                <div>
+                    <div class="cc-form-header">
+                        <h2 class="font-weight-bold mb-5">Let's set up your account</h2>
+                        <p class="mb-5">Already have an account? <a href="#" class="font-weight-bold">Sign
+                                in</a></p>
+                    </div>
+                    <form>
+                        <!-- Name Input -->
+                        <div class="input-container">
+                            <input type="text" required />
+                            <span class="cc-placeholder">Your name</span>
+                        </div>
+                        <!-- Email Address Input -->
+                        <div class="input-container">
+                            <input type="email" required />
+                            <span class="cc-placeholder">Email address</span>
+                            <i class="fas fa-eye"></i>
+                            <br />
+                        </div>
+                        <p class="d-none mt-n3 cc-error">please enter a valid email address</p>
+                        <!-- Occupation Input -->
+                        <div class="" required>
+                            <select class="cc-select">
+                                <option>I would describe my user type as</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                        <!-- Password Input -->
+                        <div class="input-container">
+                            <input type="password" minlength="8" required />
+                            <span class="cc-placeholder">Password</span>
+                            <i class="fas fa-eye"></i>
+                            <br />
+                            <small class="text-muted">Minimum 8 characters</small>
+                        </div>
+                        <button type="submit" class="font-weight-bold mt-4 mb-5 btn btn-primary" disabled>Next</button>
+                        <section class="border-0">
+                            <small>By clicking the "Next" button, you agree to creating a free account, and to <a
+                                    href="#" class="font-weight-bold">Terms of Servies </a>and<a href="#"
+                                    class="font-weight-bold"> privacy Policy</a></small>
+                        </section>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- Hero text section -->
+        <section class="cc-hero-section text-white d-flex justify-content-center align-items-center">
+            <div class="p-5">
+                <h1 class="font-weight-bold text-center my-5">Dummy Heading</h1>
+                <p class="text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero dolores
+                    incidunt ea
+                    impedit
+                    distinctio doloribus labore sequi dolor eligendi ab tempora accusantium porro soluta possimus,
+                    voluptates quod esse iure harum aut quam nostrum. Natus quibusdam praesentium voluptas, sequi
+                    consequuntur expedita sint voluptatem ad neque dolorem vero maiores beatae culpa quasi!</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- The jquery file -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <!-- The bootstrap js bundle -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Our custom js file -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
