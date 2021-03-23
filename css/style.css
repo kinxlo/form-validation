@@ -4,11 +4,10 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   outline: none;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
 }
 
-.cc-error {
+.cc-email-error,
+.cc-name-error {
   font-size: 12px;
   color: #f64343;
 }
@@ -58,6 +57,8 @@ form div .cc-placeholder {
   top: 11px;
   left: 20px;
   color: gray;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 form div i {
@@ -70,7 +71,7 @@ form div i {
 form input[type='text'],
 form input[type='password'],
 form input[type='email'],
-form .cc-select {
+form select {
   border: none;
   border-radius: 5px;
   width: 100%;
@@ -79,12 +80,19 @@ form .cc-select {
   padding: 0 2.5rem 0 1.2rem;
 }
 
-form input[type='text']:focus,
-form input[type='password']:focus,
-form input[type='email']:focus,
-form .cc-select:focus {
-  -webkit-box-shadow: 0 0 5px #f64343;
-          box-shadow: 0 0 5px #f64343;
+form input[type='text']:focus:invalid,
+form input[type='password']:focus:invalid,
+form input[type='email']:focus:invalid,
+form select:focus:invalid {
+  border: 1px solid #f64343;
+}
+
+form .cc-select {
+  padding-right: 1rem;
+}
+
+form .cc-select select {
+  color: grey;
 }
 
 form button {
@@ -106,5 +114,12 @@ form button {
   left: 18px;
   font-size: 12px;
   background: #f9f9f9;
-  padding: 0 .3rem;
+  padding: 0 0.3rem;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.cc-active {
+  background: #286efa;
+  color: #fff;
 }

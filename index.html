@@ -30,44 +30,53 @@
                         <p class="mb-5">Already have an account? <a href="#" class="font-weight-bold">Sign
                                 in</a></p>
                     </div>
-                    <form>
+                    <form novalidate>
                         <!-- Name Input -->
-                        <div class="input-container">
-                            <input type="text" required />
-                            <span class="cc-placeholder">Your name</span>
-                        </div>
+                        <section>
+                            <div class="input-container text-div">
+                                <input type="text" id="name" required />
+                                <span class="cc-placeholder">Your name</span>
+                            </div>
+                            <p class="d-none mt-n3 cc-name-error"></p>
+                        </section>
                         <!-- Email Address Input -->
-                        <div class="input-container">
-                            <input type="email" required />
-                            <span class="cc-placeholder">Email address</span>
-                            <i class="fas fa-eye"></i>
-                            <br />
-                        </div>
-                        <p class="d-none mt-n3 cc-error">please enter a valid email address</p>
+                        <section>
+                            <div class="input-container email-div">
+                                <input type="email" id="email" required />
+                                <span class="cc-placeholder">Email address</span>
+                                <i class="fas fa-eye"></i>
+                                <br />
+                            </div>
+                            <p class="d-none mt-n3 cc-email-error"></p>
+                        </section>
                         <!-- Occupation Input -->
-                        <div class="" required>
-                            <select class="cc-select">
-                                <option>I would describe my user type as</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                            </select>
-                        </div>
+                        <section>
+                            <div class="cc-select">
+                                <select>
+                                    <option>I would describe my user type as</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </section>
                         <!-- Password Input -->
-                        <div class="input-container">
-                            <input type="password" minlength="8" required />
-                            <span class="cc-placeholder">Password</span>
-                            <i class="fas fa-eye"></i>
-                            <br />
-                            <small class="text-muted">Minimum 8 characters</small>
-                        </div>
-                        <button type="submit" class="font-weight-bold mt-4 mb-5 btn btn-primary" disabled>Next</button>
-                        <section class="border-0">
+                        <section>
+                            <div class="input-container password-div">
+                                <input type="password" id="password" minlength="8" required />
+                                <span class="cc-placeholder">Password</span>
+                                <i class="fas fa-eye"></i>
+                                <br />
+                                <small class="text-muted">Minimum 8 characters</small>
+                            </div>
+                        </section>
+                        <button type="submit" class="font-weight-bold mt-4 mb-5 submit-btn" disabled>Next</button>
+                        <article class="border-0">
                             <small>By clicking the "Next" button, you agree to creating a free account, and to <a
                                     href="#" class="font-weight-bold">Terms of Servies </a>and<a href="#"
                                     class="font-weight-bold"> privacy Policy</a></small>
-                        </section>
+                        </article>
                     </form>
                 </div>
             </div>
@@ -91,7 +100,8 @@
     <!-- The bootstrap js bundle -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <!-- Our custom js file -->
-    <script src="js/main.js"></script>
+    <!-- <script src="js/main.js"></script> -->
+    <script src="js/main2.js"></script>
 </body>
 
 </html>
