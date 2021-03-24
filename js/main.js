@@ -45,9 +45,8 @@ formSections.forEach((section) => {
       const errorInput = event.target.parentNode.parentNode.children[1]
       placeHolder = event.target.parentNode.children[1] //get the placeholder
 
-      //check the validity of the input
+      //check the validity of the input(email and username)
       if (inputType.type == 'text' || inputType.type == 'email') {
-        
         if (inputType.validity.valid) {
           //if the input is valid, change the color of the placeholder
           placeHolder.style.color = 'grey'
@@ -57,6 +56,15 @@ formSections.forEach((section) => {
           //also, if the input is not valid change the placeholder color to red
           placeHolder.style.color = 'red'
           showErrorMessage(inputType, errorInput) //and fire the function to show the error message.
+        }
+      }
+
+      // a bit of code repitition...
+      if (inputType.type == 'password') {
+        if (inputType.validity.valid) {
+          placeHolder.style.color = 'grey'
+        } else {
+          placeHolder.style.color = 'red'
         }
       }
     })
