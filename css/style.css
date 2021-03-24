@@ -54,6 +54,7 @@ form div {
 
 form div .cc-placeholder {
   position: absolute;
+  font-size: 14px;
   top: 11px;
   left: 20px;
   color: gray;
@@ -93,6 +94,7 @@ form .cc-select {
 
 form .cc-select select {
   color: grey;
+  font-size: 14px;
 }
 
 form button {
@@ -102,6 +104,8 @@ form button {
   height: 50px;
   background: #ededed;
   color: #bab9b9;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .cc-hero-section {
@@ -122,4 +126,15 @@ form button {
 .cc-active {
   background: #286efa;
   color: #fff;
+}
+
+.fa-eye {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.fa-eye:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #f64343;
 }
